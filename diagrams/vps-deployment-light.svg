@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 528" width="960" height="528" role="img" aria-labelledby="vps-deployment-t vps-deployment-d" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+<title id="vps-deployment-t">VPS deployment</title>
+<desc id="vps-deployment-d">The agent&#x27;s browser reached nginx over HTTPS through the server firewall. nginx passed requests to PHP-FPM running the Laravel app, which used a MySQL server on the same machine. Supervisor kept a queue worker running, certbot renewed the certificate, cron ran the Laravel scheduler and updated dynamic DNS, and there were backups. The owner deployed over SSH.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="8" refX="8" refY="4" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><polygon points="0 0, 9 4, 0 8" fill="#4f5d75"/></marker></defs>
+<rect width="100%" height="100%" rx="8" fill="#f5f5f5"/>
+<rect x="208" y="24" width="728" height="480" rx="8" fill="#ececec" stroke="#8a94a6" stroke-width="1" stroke-dasharray="4 3"/><text x="224" y="46" font-size="12" font-weight="600" fill="#5a6580">Self-managed VPS, Ubuntu 24.04</text>
+<path d="M 160,132 L 240,132" fill="none" stroke="#4f5d75" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="183" y="122" text-anchor="middle" font-size="12" fill="#5a6580">HTTPS</text>
+<path d="M 160,416 L 240,416" fill="none" stroke="#4f5d75" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="183" y="406" text-anchor="middle" font-size="12" fill="#5a6580">SSH</text>
+<path d="M 352,132 L 432,132" fill="none" stroke="#4f5d75" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M 352,416 L 416,416" fill="none" stroke="#4f5d75" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M 568,132 L 624,132" fill="none" stroke="#4f5d75" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M 760,132 L 800,132" fill="none" stroke="#4f5d75" stroke-width="1.4" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<path d="M 500,248 L 500,168" fill="none" stroke="#4f5d75" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="526" y="212" text-anchor="middle" font-size="12" fill="#5a6580">renews</text>
+<path d="M 692,248 L 692,216 Q 692,208 700,208 L 840,208 Q 848,208 848,200 L 848,168" fill="none" stroke="#4f5d75" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="770" y="200" text-anchor="middle" font-size="12" fill="#5a6580">schedules calls</text>
+<path d="M 568,416 L 624,416" fill="none" stroke="#4f5d75" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="594" y="406" text-anchor="middle" font-size="12" fill="#5a6580">restart</text>
+<path d="M 760,416 L 908,416 Q 916,416 916,408 L 916,140 Q 916,132 908,132 L 896,132" fill="none" stroke="#4f5d75" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="838" y="406" text-anchor="middle" font-size="12" fill="#5a6580">BORME searches</text>
+<rect x="24" y="96" width="136" height="72" rx="6" fill="#ffffff" stroke="#8a94a6" stroke-width="1.2"/><text x="92.0" y="129" text-anchor="middle" font-size="14" font-weight="600" fill="#2d3142">Agent</text><text x="92.0" y="146" text-anchor="middle" font-size="12" fill="#4f5d75">Web browser</text>
+<rect x="24" y="376" width="136" height="80" rx="6" fill="#ffffff" stroke="#8a94a6" stroke-width="1.2"/><text x="92.0" y="413" text-anchor="middle" font-size="14" font-weight="600" fill="#2d3142">Owner</text><text x="92.0" y="430" text-anchor="middle" font-size="12" fill="#4f5d75">SSH key</text>
+<rect x="240" y="72" width="112" height="400" rx="6" fill="#ffffff" stroke="#8a94a6" stroke-width="1.2"/><text x="296.0" y="269" text-anchor="middle" font-size="14" font-weight="600" fill="#2d3142">Firewall</text><text x="296.0" y="286" text-anchor="middle" font-size="12" fill="#4f5d75">ufw</text>
+<rect x="432" y="96" width="136" height="72" rx="6" fill="#ffffff" stroke="#bf4520" stroke-width="2"/><text x="500.0" y="129" text-anchor="middle" font-size="14" font-weight="600" fill="#2d3142">nginx</text><text x="500.0" y="146" text-anchor="middle" font-size="12" fill="#4f5d75">web server</text>
+<rect x="624" y="96" width="136" height="72" rx="6" fill="#ffffff" stroke="#8a94a6" stroke-width="1.2"/><text x="692.0" y="129" text-anchor="middle" font-size="14" font-weight="600" fill="#2d3142">PHP-FPM 8.4</text><text x="692.0" y="146" text-anchor="middle" font-size="12" fill="#4f5d75">Laravel app</text>
+<rect x="800" y="96" width="96" height="72" rx="6" fill="#ffffff" stroke="#8a94a6" stroke-width="1.2"/><text x="848.0" y="129" text-anchor="middle" font-size="14" font-weight="600" fill="#2d3142">MySQL</text><text x="848.0" y="146" text-anchor="middle" font-size="12" fill="#4f5d75">local only</text>
+<rect x="432" y="248" width="136" height="72" rx="6" fill="#ffffff" stroke="#8a94a6" stroke-width="1.2"/><text x="500.0" y="281" text-anchor="middle" font-size="14" font-weight="600" fill="#2d3142">certbot timer</text><text x="500.0" y="298" text-anchor="middle" font-size="12" fill="#4f5d75">TLS certificate</text>
+<rect x="624" y="248" width="136" height="72" rx="6" fill="#ffffff" stroke="#8a94a6" stroke-width="1.2"/><text x="692.0" y="273" text-anchor="middle" font-size="14" font-weight="600" fill="#2d3142">Cron</text><text x="692.0" y="290" text-anchor="middle" font-size="12" fill="#4f5d75">Laravel scheduler,</text><text x="692.0" y="306" text-anchor="middle" font-size="12" fill="#4f5d75">dynamic DNS</text>
+<rect x="800" y="248" width="96" height="72" rx="6" fill="#ffffff" stroke="#8a94a6" stroke-width="1.2"/><text x="848.0" y="289" text-anchor="middle" font-size="14" font-weight="600" fill="#2d3142">Backups</text>
+<rect x="416" y="376" width="152" height="80" rx="6" fill="#ffffff" stroke="#8a94a6" stroke-width="1.2"/><text x="492.0" y="405" text-anchor="middle" font-size="14" font-weight="600" fill="#2d3142">Manual deploy</text><text x="492.0" y="422" text-anchor="middle" font-size="12" fill="#4f5d75">git pull, composer,</text><text x="492.0" y="438" text-anchor="middle" font-size="12" fill="#4f5d75">build, migrate</text>
+<rect x="624" y="376" width="136" height="80" rx="6" fill="#ffffff" stroke="#8a94a6" stroke-width="1.2"/><text x="692.0" y="413" text-anchor="middle" font-size="14" font-weight="600" fill="#2d3142">Supervisor</text><text x="692.0" y="430" text-anchor="middle" font-size="12" fill="#4f5d75">queue:work</text>
+</svg>
